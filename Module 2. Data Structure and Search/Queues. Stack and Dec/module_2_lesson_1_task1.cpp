@@ -1,7 +1,14 @@
+/* Дана строка s.Строка состоит из английских букв в нижнем регистре.
+Необходимо из строки удалить все рядом стоящие повторяющиеся буквы.
+Например, в строке xyyx мы должны удалить yy, а после и оставшиеся xx и того после должна получиться пустая строка.
+Или же в строке fqffqzzsd после удаления остануться только fsd.
+Первыми удаляться ff, являющимися третьими и четвертыми символами, затем qq и после уже zz. */
+
+
 #include <iostream>
 #include <stack>
 #include <string>
-#include <algorithm>  // Добавлено для std::reverse
+#include <algorithm> 
 
 std::string removeAdjacentDuplicates(const std::string& s) {
     std::stack<char> stack;
